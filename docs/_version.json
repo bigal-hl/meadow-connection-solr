@@ -1,7 +1,7 @@
 {
 	"Name": "meadow-connection-solr",
-	"Version": "1.0.2",
+	"Version": "1.0.3",
 	"Description": "Meadow Solr Connection Plugin",
-	"GeneratedAt": "2026-04-10T17:21:02.720Z",
-	"GitCommit": "375a9de"
+	"GeneratedAt": "2026-05-22T05:39:59.343Z",
+	"GitCommit": "ad9dd0d"
 }
