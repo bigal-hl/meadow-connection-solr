@@ -1,6 +1,6 @@
 # meadow-connection-solr
 
-> **[&#9654; Read the Meadow-Connection-Solr Documentation](https://fable-retold.github.io/meadow-connection-solr/)** &mdash; interactive docs with the full API reference.
+> **[Read the Meadow-Connection-Solr Documentation](https://fable-retold.github.io/meadow-connection-solr/)** - interactive docs with the full API reference.
 
 Apache Solr connection service for the Meadow data access layer.
 

@@ -2,7 +2,7 @@
 
 > Apache Solr connection service for the Meadow data access layer
 
-- **Fable Service Provider** -- seamless dependency injection integration
+- **Fable Service Provider** -- smooth dependency injection integration
 - **Full-Text Search** -- connects Meadow to Apache Solr's indexing capabilities
 - **Schema Field Generation** -- Solr field descriptors from Meadow schemas
 - **HTTPS Support** -- optional secure connections
