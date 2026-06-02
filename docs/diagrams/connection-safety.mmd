@@ -1,0 +1,10 @@
+flowchart TD
+	A[connect called] --> B{Already connected?}
+	B -->|Yes| C[Log error]
+	C --> D[Return without action]
+	B -->|No| E{solr-client installed?}
+	E -->|No| F[Log error: not installed]
+	E -->|Yes| G[Build connection URL]
+	G --> H[Log connection info]
+	H --> I[solr.createClient]
+	I --> J[Set connected = true]

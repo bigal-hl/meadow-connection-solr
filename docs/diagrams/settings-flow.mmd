@@ -1,0 +1,16 @@
+flowchart LR
+	subgraph Input Sources
+		OPT[Constructor Options]
+		SET[fable.settings.Solr]
+	end
+	subgraph Normalization
+		NORM["Property Mapping<br/>Server -> host<br/>Port -> port<br/>Core -> core<br/>Path -> path<br/>Secure -> secure"]
+	end
+	subgraph Output
+		URL["Connection URL<br/>http[s]://host:port/path/core"]
+		CONF["solr-client Config<br/>{ host, port, core, path, secure }"]
+	end
+	OPT --> NORM
+	SET --> NORM
+	NORM --> URL
+	NORM --> CONF

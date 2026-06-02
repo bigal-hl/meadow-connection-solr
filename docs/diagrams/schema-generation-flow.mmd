@@ -1,0 +1,9 @@
+flowchart TD
+	A[Meadow Table Schema] --> B[generateCreateTableStatement]
+	B --> C["Field Descriptor<br/>{ operation, collection, fields[] }"]
+	C --> D{createTable called?}
+	D -->|Yes| E{Connected?}
+	E -->|No| F[Callback with error]
+	E -->|Yes| G[Log schema prepared]
+	G --> H[Callback success]
+	D -->|No| I[Return descriptor for inspection]

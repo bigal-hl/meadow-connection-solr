@@ -1,0 +1,18 @@
+graph TB
+	subgraph Application Layer
+		APP[Application Code]
+		MEA[Meadow ORM]
+	end
+	subgraph Connection Layer
+		MCS["meadow-connection-solr<br/>(MeadowConnectionSolr)"]
+		SC[solr-client]
+	end
+	subgraph Solr Server
+		SOLR[(Apache Solr)]
+		CORE[Solr Core]
+	end
+	APP --> MEA
+	MEA --> MCS
+	MCS --> SC
+	SC -->|HTTP/HTTPS| SOLR
+	SOLR --> CORE
